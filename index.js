@@ -9,7 +9,6 @@ Date: 25/04/2022
 
 // Dependencies
 const http = require('http');
-
 const { handleReqRes } = require('./helpers/handleReqRes');
 
 // app object - module scaffolding
