@@ -11,8 +11,15 @@ Date: 25/04/2022
 const http = require('http');
 const { handleReqRes } = require('./helpers/handleReqRes');
 const environment = require('./helpers/environments');
+
+const data = require('./lib/data');
 // app object - module scaffolding
 
+// testing file system
+// @TODO: clean up later
+data.update('test', 'testFile', { name: 'USA', language: 'English' }, (error) => {
+    console.log(error);
+});
 const app = {};
 // Create server
 
